@@ -3,7 +3,9 @@ import { useState } from "react";
 
 export const CounterApp = ({ value }) => {
    const [counter, setCounter] = useState(value);
+   
    //aqui estan los handleclik que queremos
+   //para que cuando hagamos clik esto sume un numero
    const handleClick = () => {
       setCounter(counter + 1);
    };
