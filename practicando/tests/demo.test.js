@@ -1,3 +1,4 @@
+//funcion para agrupar y diferencias los test , podemos hacer los describe y test que queramos
 describe("Pruebas en <<DemoComponents/>>", () => {
    test("esta prueba no debe de fallar", () => {
       //1.inicializacion
@@ -10,7 +11,5 @@ describe("Pruebas en <<DemoComponents/>>", () => {
       //3.Observar el comportamiento... esperado
       //estaba esperando que message1 sea igual a message2
       expect(message1).toBe(message2);
-
-      
    });
 });
