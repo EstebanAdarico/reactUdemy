@@ -1,22 +1,19 @@
 
 // Desestructuración
 // Asignación Desestructurante
-const persona = {
-    nombre: 'Tony',
-    edad: 45,
-    clave: 'Ironman'
-};
+// const persona = {
+//     nombre: 'Tony',
+//     edad: 45,
+//     clave: 'Ironman'
+// };
 
 // const { edad, clave, nombre, } = persona;
 // console.log( nombre );
 // console.log( edad );
 // console.log( clave );
-
-const usContext = ({ clave, nombre, edad, rango = 'Capitán' }) => {
-
-
+//**usContext solo es un nombre que se le da a una funcion cualquiera en este caso *
+export const useContext = (clave, edad  ) => {
     // console.log( nombre, edad, rango );
-    
     return {
         nombreClave: clave,
         anios: edad,
@@ -28,9 +25,9 @@ const usContext = ({ clave, nombre, edad, rango = 'Capitán' }) => {
 
 }
 
-const { nombreClave, anios, latlng: { lat, lng } } = usContext( persona );
+// const { nombreClave, anios, latlng: { lat, lng } } = useContext();
 
-console.log(nombreClave, anios);
-console.log( lat, lng );
+// console.log(nombreClave, anios);
+// console.log( lat, lng );
 
 

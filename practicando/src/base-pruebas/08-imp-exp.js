@@ -8,7 +8,12 @@ import heroes from '../data/heroes';
 
 
 
-export const getHeroeById = (id) => heroes.find( (heroe) => heroe.id === id );
+// export const getHeroeById = (id) => heroes.find( (heroe) => heroe.id === id );
+//desestructurando la funcion flecha de arriba
+export function getHeroeById(id) {
+   return heroes.find((heroe) => heroe.id === id)
+      }
+
 
 // console.log( getHeroeById(2) );
 
