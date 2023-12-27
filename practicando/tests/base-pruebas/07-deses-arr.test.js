@@ -9,6 +9,7 @@ describe("Prueba de 07-desestructuracion de arreglos", () => {
       expect(typeof letter).toBe("string");
       expect(typeof numero).toBe("number");
       //utilizando las palabras claves de jest
-      expect(letter).toEqual(expect.any("string"));
+      // tener en cuenta que los String o number siempre va de la mano con toEqual para expect.any
+      expect(letter).toEqual(expect.any(String));
    });
 });
