@@ -7,9 +7,10 @@ export const getHeroeByIdAsync = (id) => {
          // importen el
          const p1 = getHeroeById(id);
          if (p1) {
+            //el id ingresado desde promesas.test es lo que buscara y mostrara
             resolve(p1);
          } else {
-            reject("No se pudo encontrar el héroe");
+            reject("No se pudo encontrar el héroe "+ id);
          }
       }, 1000);
    });
