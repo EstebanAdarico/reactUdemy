@@ -10,7 +10,7 @@ describe("prueba de promesas 09-promesas", () => {
          //como es una tarea asincrona  se puede poner .then
          .then((hero) => {
             expect(hero).toEqual({
-               //aqui estoy ingresando lo que espero recibir 
+               //aqui estoy ingresando lo que espero recibir
                id: 1,
                name: "Batman",
                owner: "DC",
@@ -18,7 +18,7 @@ describe("prueba de promesas 09-promesas", () => {
             done();
          });
    });
-   //evaluando la execcion 
+   //evaluando la execcion
    test("getHeroeByIdAsync debe de obtener un error si no heroe existe", () => {
       //aumentando el tiempo
 
@@ -33,4 +33,3 @@ describe("prueba de promesas 09-promesas", () => {
          });
    });
 });
- 
